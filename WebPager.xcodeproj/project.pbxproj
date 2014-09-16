@@ -13,6 +13,8 @@
 		36A5E49019C84A6200CB210D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A5E48F19C84A6200CB210D /* Images.xcassets */; };
 		36A5E49319C84A6200CB210D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A5E49119C84A6200CB210D /* LaunchScreen.xib */; };
 		36A5E49F19C84A6200CB210D /* WebPagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E49E19C84A6200CB210D /* WebPagerTests.m */; };
+		36A5E4AA19C84B3000CB210D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E4A919C84B3000CB210D /* WebViewController.m */; };
+		36A5E4AD19C84B4C00CB210D /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E4AC19C84B4C00CB210D /* PagerViewController.m */; };
 		E06AE13865CE429E82459C8B /* libPods-WebPager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E5BF0165E4AFC87B31B77 /* libPods-WebPager.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,10 @@
 		36A5E49819C84A6200CB210D /* WebPagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A5E49D19C84A6200CB210D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A5E49E19C84A6200CB210D /* WebPagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPagerTests.m; sourceTree = "<group>"; };
+		36A5E4A819C84B3000CB210D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		36A5E4A919C84B3000CB210D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		36A5E4AB19C84B4C00CB210D /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
+		36A5E4AC19C84B4C00CB210D /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
 		BB1E5BF0165E4AFC87B31B77 /* libPods-WebPager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebPager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,10 @@
 				36A5E48619C84A6200CB210D /* AppDelegate.h */,
 				36A5E48719C84A6200CB210D /* AppDelegate.m */,
 				36A5E48C19C84A6200CB210D /* Main.storyboard */,
+				36A5E4AB19C84B4C00CB210D /* PagerViewController.h */,
+				36A5E4AC19C84B4C00CB210D /* PagerViewController.m */,
+				36A5E4A819C84B3000CB210D /* WebViewController.h */,
+				36A5E4A919C84B3000CB210D /* WebViewController.m */,
 				36A5E48F19C84A6200CB210D /* Images.xcassets */,
 				36A5E49119C84A6200CB210D /* LaunchScreen.xib */,
 				36A5E48219C84A6200CB210D /* Supporting Files */,
@@ -265,6 +275,8 @@
 			files = (
 				36A5E48819C84A6200CB210D /* AppDelegate.m in Sources */,
 				36A5E48519C84A6200CB210D /* main.m in Sources */,
+				36A5E4AD19C84B4C00CB210D /* PagerViewController.m in Sources */,
+				36A5E4AA19C84B3000CB210D /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
