@@ -13,6 +13,7 @@
 		36A5E49019C84A6200CB210D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A5E48F19C84A6200CB210D /* Images.xcassets */; };
 		36A5E49319C84A6200CB210D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A5E49119C84A6200CB210D /* LaunchScreen.xib */; };
 		36A5E49F19C84A6200CB210D /* WebPagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E49E19C84A6200CB210D /* WebPagerTests.m */; };
+		E06AE13865CE429E82459C8B /* libPods-WebPager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E5BF0165E4AFC87B31B77 /* libPods-WebPager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4EC574277B4659AB798373 /* Pods-WebPager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebPager.xcconfig"; path = "Pods/Pods-WebPager.xcconfig"; sourceTree = "<group>"; };
 		36A5E47F19C84A6200CB210D /* WebPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A5E48319C84A6200CB210D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A5E48419C84A6200CB210D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 		36A5E49819C84A6200CB210D /* WebPagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebPagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A5E49D19C84A6200CB210D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A5E49E19C84A6200CB210D /* WebPagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPagerTests.m; sourceTree = "<group>"; };
+		BB1E5BF0165E4AFC87B31B77 /* libPods-WebPager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebPager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06AE13865CE429E82459C8B /* libPods-WebPager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,8 @@
 				36A5E48119C84A6200CB210D /* WebPager */,
 				36A5E49B19C84A6200CB210D /* WebPagerTests */,
 				36A5E48019C84A6200CB210D /* Products */,
+				0A4EC574277B4659AB798373 /* Pods-WebPager.xcconfig */,
+				E73358A5089242AEA594C6D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +120,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E73358A5089242AEA594C6D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1E5BF0165E4AFC87B31B77 /* libPods-WebPager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36A5E4A219C84A6200CB210D /* Build configuration list for PBXNativeTarget "WebPager" */;
 			buildPhases = (
+				91D8637E7B8445E895C87202 /* Check Pods Manifest.lock */,
 				36A5E47B19C84A6200CB210D /* Sources */,
 				36A5E47C19C84A6200CB210D /* Frameworks */,
 				36A5E47D19C84A6200CB210D /* Resources */,
+				1004060C91BE44DCB03FB754 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +224,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1004060C91BE44DCB03FB754 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WebPager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91D8637E7B8445E895C87202 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36A5E47B19C84A6200CB210D /* Sources */ = {
@@ -335,6 +384,7 @@
 		};
 		36A5E4A319C84A6200CB210D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4EC574277B4659AB798373 /* Pods-WebPager.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebPager/Info.plist;
@@ -345,6 +395,7 @@
 		};
 		36A5E4A419C84A6200CB210D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4EC574277B4659AB798373 /* Pods-WebPager.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebPager/Info.plist;
@@ -406,6 +457,7 @@
 				36A5E4A419C84A6200CB210D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36A5E4A519C84A6200CB210D /* Build configuration list for PBXNativeTarget "WebPagerTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +466,7 @@
 				36A5E4A719C84A6200CB210D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
